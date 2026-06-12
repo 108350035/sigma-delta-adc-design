@@ -1,4 +1,4 @@
-# 有效位數14位之sigma delta adc 電路設計
+# 有效位數14位之sigma delta adc 電路設計 以tsmc 28nm實現
 
 採樣時中為1MHz
 
@@ -7,7 +7,6 @@ sigma delta架構為二階CIFF以及一位量化器
 以tsmc 28nm 實現
 
 搭配工具:virtuoso spectre + ams + design compiler
-
 
 
 ## matlab與simulink 模型
@@ -21,6 +20,6 @@ sigma delta架構為二階CIFF以及一位量化器
 
 ![image](https://github.com/108350035/sigma-delta-adc-design/blob/main/SDADC/SD__schemtaic.JPG)
 
-
+##其餘的在檔案裡，包括數位濾波器電路 面積數據
 
 
