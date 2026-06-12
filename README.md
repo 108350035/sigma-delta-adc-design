@@ -24,7 +24,7 @@ sigma delta架構為二階CIFF以及一位量化器
 
 ![image](https://github.com/108350035/sigma-delta-adc-design/blob/main/SDADC/noise_shape.JPG)
 
-![image](https://github.com/108350035/sigma-delta-adc-design/blob/main/SDADC/OUT_WAVE.JPG)
+![image](https://github.com/108350035/sigma-delta-adc-design/blob/main/SDADC/OUT_wave.JPG)
 
 
 ## 其餘的在檔案裡，包括數位濾波器電路 面積數據
