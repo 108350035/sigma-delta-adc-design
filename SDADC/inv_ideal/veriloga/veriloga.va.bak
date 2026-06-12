@@ -1,0 +1,23 @@
+// VerilogA for SDADC, inv_ideal, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module inv_ideal;
+input in;
+output out;
+electrical in,out;
+parameter real vlogic_high=5;
+parameter real vlogic_low=0;
+
+	real vout_val;
+	real vth=2.5;
+
+	analog begin
+		
+		if(V(in) > vth) vout_val=vlogic_low;
+		else vout_val=vlogic_high;
+
+		V(out) <+ vout_val;
+	end
+endmodule

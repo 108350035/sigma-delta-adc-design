@@ -1,0 +1,22 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun May 17 12:33:45 2026 
+Best design point: 1
+Design specs: 
+	SDADC:diffamp:1	corner	C0 - 
+Design parameters: 
+	vin		200m
+	fs		1M
+	fin		1M
+	bias1		500m
+	bias2		750m
+	bias3		900m
+	bias4		570m
+	Vn		900m
+	Vp		900m
+
+Interactive.6
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.6 completed. 
+Current time: Sun May 17 12:33:48 2026 

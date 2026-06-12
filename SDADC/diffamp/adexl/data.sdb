@@ -1,0 +1,2019 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="0">_default</corner>
+			<corner enabled="1">C0
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">SDADC:diffamp:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>diffamp</value>
+					</option>
+					<option>lib
+						<value>SDADC</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>SDADC:diffamp:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>diffamp</value>
+					</option>
+					<option>lib
+						<value>SDADC</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>state1</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var enabled="1">vin
+				<value>0.2</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">fs
+				<value>1M</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">fin
+				<value>fs</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>bias1
+				<value>{Inclusion List}0.5{Inclusion List}</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>bias2
+				<value>0.75</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>bias3
+				<value>0.9</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>bias4
+				<value>0.57</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vn
+				<value>0.9</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vp
+				<value>0.9</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">Z
+				<value>1</value>
+				<dependentTests>
+					<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">u
+				<value></value>
+				<dependentTests>
+					<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Replace</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>distributedplot_enabled
+				<value>no</value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.4
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 12:01:08 2026</timestamp>
+			<uuid>{57ee5e3a-ec39-432d-a9cc-b9bb1bbde112}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_120108332</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.4</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.5
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 12:03:50 2026</timestamp>
+			<uuid>{8eaab853-252a-4272-af80-9bd2950dd355}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_120350205</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.5</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.6
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.6</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 12:33:45 2026</timestamp>
+			<uuid>{8689df7b-0577-40ff-b8e3-61f89dde1e69}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.6.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_123345374</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.6</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.6</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.6.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 12:34:29 2026</timestamp>
+			<uuid>{d946f438-a440-4b19-b566-dd0c9ff4619b}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_123429801</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 12:35:12 2026</timestamp>
+			<uuid>{0a012c61-edde-4c56-ab23-364cdbb6c115}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_123512684</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 12:36:42 2026</timestamp>
+			<uuid>{c603ffd1-5fae-4a22-9a7c-497e60aeadd5}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_123642029</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 13:34:24 2026</timestamp>
+			<uuid>{023129d9-6812-4ba8-afd4-332ca9cabaa6}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_133424095</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.10</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.11
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 15:27:16 2026</timestamp>
+			<uuid>{7768d45e-0435-4b94-8340-36c897b8c175}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_152716287</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.11</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.12
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.12</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 15:34:20 2026</timestamp>
+			<uuid>{40f18c89-8ff2-411f-95f6-d7815224afb7}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.12.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_153420972</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.12</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.12</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.12.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.13
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">toplevel.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/tsmcN28_CLN28HPC/N28/models/spectre/toplevel.scs</modelfile>
+								<modelsection>"top_tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">SDADC:diffamp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>SDADC:diffamp:1_state1_Interactive.13</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>diffamp</value>
+							</option>
+							<option>lib
+								<value>SDADC</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">vin
+						<value>0.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fs
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">fin
+						<value>fs</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias1
+						<value>{Inclusion List}0.5{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias2
+						<value>0.75</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias3
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>bias4
+						<value>0.57</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vn
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vp
+						<value>0.9</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">Z
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">u
+						<value></value>
+						<dependentTests>
+							<dependentTest omitted="0">SDADC:diffamp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 17 15:35:02 2026</timestamp>
+			<uuid>{806350e9-1f8a-4676-8966-6dea0623d489}</uuid>
+			<resultsname>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.13.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/kabuto_kabuto_153502392</localpsfdir>
+			<psfdir>/home/kabuto/simulation/SDADC/diffamp/adexl/results/data/Interactive.13</psfdir>
+			<simdir>$AXL_PROJECT_DIR/SDADC/diffamp/adexl/results/data/Interactive.13</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/kabuto/SDADC/diffamp/adexl/results/data/Interactive.13.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

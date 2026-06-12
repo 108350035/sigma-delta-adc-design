@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : CIC_Comp
+Version: V-2023.12-SP5
+Date   : Tue Jun  9 21:51:19 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t40p140tt1v25c (File: /home/tcbn28hpcplusbwp7t40p140_180b/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp7t40p140_180a/tcbn28hpcplusbwp7t40p140tt1v25c.db)
+
+Number of ports:                           26
+Number of nets:                          5259
+Number of cells:                         4618
+Number of combinational cells:           3416
+Number of sequential cells:              1202
+Number of macros/black boxes:               0
+Number of buf/inv:                        558
+Number of references:                      46
+
+Combinational area:               2236.850002
+Buf/Inv area:                      110.151997
+Noncombinational area:            2257.037996
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  4493.887998
+Total area:                 undefined
+1

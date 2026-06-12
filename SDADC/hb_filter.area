@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : hb_filter
+Version: V-2023.12-SP5
+Date   : Tue Jun  9 22:24:17 2026
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t40p140tt1v25c (File: /home/tcbn28hpcplusbwp7t40p140_180b/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp7t40p140_180a/tcbn28hpcplusbwp7t40p140tt1v25c.db)
+
+Number of ports:                           26
+Number of nets:                          2243
+Number of cells:                         2024
+Number of combinational cells:           1515
+Number of sequential cells:               509
+Number of macros/black boxes:               0
+Number of buf/inv:                        252
+Number of references:                      33
+
+Combinational area:               1003.029999
+Buf/Inv area:                       49.489999
+Noncombinational area:             947.757994
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  1950.787993
+Total area:                 undefined
+1

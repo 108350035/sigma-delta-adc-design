@@ -1,0 +1,176 @@
+//Verilog HDL for "SDADC", "CIC_Comp" "functional"
+
+
+module CIC_Comp (clk,rst_n,in,out);
+input clk,rst_n;
+input [11:0] in;
+output reg [11:0] out;
+
+
+reg [1:0] sel;
+reg [29:0] H0_add_reg [16:0];
+reg [29:0] H1_add_reg [16:0];
+reg [29:0] H2_add_reg [16:0];
+reg [29:0] H3_add_reg [16:0];
+wire [32:0] H0123_add;
+
+integer j;
+
+reg [11:0] in0,in1,in2;
+
+
+assign H0123_add = (H0_add_reg[0] + H1_add_reg[0]) + (H2_add_reg[0] + H3_add_reg[0]);
+
+
+
+always@(posedge clk,negedge rst_n)
+begin
+    if(!rst_n) out<=0;
+    else out<=H0123_add[17:6];
+end
+
+always@(posedge clk,negedge rst_n)
+begin
+    if(!rst_n) begin
+        in0<=0;
+        in1<=0;
+        in2<=0;
+    end
+    else begin
+        in2<=in;
+        in1<=in2;
+        in0<=in1;
+    end
+end
+
+always@(posedge clk,negedge rst_n)
+begin
+    if(!rst_n) sel<=0;
+    else sel<=sel+1;
+end
+
+
+
+always@(posedge clk,negedge rst_n)
+begin
+    if(!rst_n) begin
+        for(j=0;j<17;j=j+1) begin
+            H0_add_reg[j]<=0;
+        end
+    end
+    else if(sel == 3)begin
+        H0_add_reg[0] <= H0_add_reg[1] + in0;
+        H0_add_reg[1] <= H0_add_reg[2];
+        H0_add_reg[2] <= H0_add_reg[3];
+        H0_add_reg[3] <= H0_add_reg[4] - in0;
+        H0_add_reg[4] <= H0_add_reg[5] - in0;
+        H0_add_reg[5] <= H0_add_reg[6];        
+        H0_add_reg[6] <= H0_add_reg[7] + (in0 << 1);
+        H0_add_reg[7] <= H0_add_reg[8] + (in0 << 2);  
+        H0_add_reg[8] <= H0_add_reg[9] + ((in0 << 2) + in0);        
+        H0_add_reg[9] <= H0_add_reg[10] + (in0 << 2);  
+        H0_add_reg[10] <= H0_add_reg[11] + ((in0 << 1) + in0); 
+        H0_add_reg[11] <= H0_add_reg[12] + in0;    
+        H0_add_reg[12] <= H0_add_reg[13] - in0;  
+        H0_add_reg[13] <= H0_add_reg[14] - in0;                
+        H0_add_reg[14] <= H0_add_reg[15] - in0;     
+        H0_add_reg[15] <= H0_add_reg[16];
+        H0_add_reg[16] <= in0;
+    
+    end
+end
+
+always@(posedge clk,negedge rst_n)
+begin
+    if(!rst_n) begin
+        for(j=0;j<17;j=j+1) begin
+            H1_add_reg[j]<=0;
+        end
+    end
+    else if(sel == 3) begin
+        H1_add_reg[0] <= H1_add_reg[1] + in;
+        H1_add_reg[1] <= H1_add_reg[2];    
+        H1_add_reg[2] <= H1_add_reg[3];            
+        H1_add_reg[3] <= H1_add_reg[4] - in;
+        H1_add_reg[4] <= H1_add_reg[5] - in;
+        H1_add_reg[5] <= H1_add_reg[6];            
+        H1_add_reg[6] <= H1_add_reg[7] + (in << 1);
+        H1_add_reg[7] <= H1_add_reg[8] + (in << 2);  
+        H1_add_reg[8] <= H1_add_reg[9] + ((in << 2) + in);        
+        H1_add_reg[9] <= H1_add_reg[10] + (in << 2);  
+        H1_add_reg[10] <= H1_add_reg[11] + (in << 1); 
+        H1_add_reg[11] <= H1_add_reg[12];    
+        H1_add_reg[12] <= H1_add_reg[13] - in;  
+        H1_add_reg[13] <= H1_add_reg[14] - in;                
+        H1_add_reg[14] <= H1_add_reg[15];     
+        H1_add_reg[15] <= H1_add_reg[16];
+        H1_add_reg[16] <= in;   
+    
+    end
+end
+
+always@(posedge clk,negedge rst_n)
+begin
+    if(!rst_n) begin
+        for(j=0;j<17;j=j+1) begin
+            H2_add_reg[j]<=0;
+        end
+    end
+    else if(sel == 3) begin
+        H2_add_reg[0] <= H2_add_reg[1] + in2;
+        H2_add_reg[1] <= H2_add_reg[2];    
+        H2_add_reg[2] <= H2_add_reg[3] - in2;            
+        H2_add_reg[3] <= H2_add_reg[4] - in2;
+        H2_add_reg[4] <= H2_add_reg[5] - in2;
+        H2_add_reg[5] <= H2_add_reg[6] + in2;            
+        H2_add_reg[6] <= H2_add_reg[7] + ((in2 << 1) + in2);
+        H2_add_reg[7] <= H2_add_reg[8] + (in2 << 2);  
+        H2_add_reg[8] <= H2_add_reg[9] + ((in2 << 2) + in2);        
+        H2_add_reg[9] <= H2_add_reg[10] + (in2 << 2);  
+        H2_add_reg[10] <= H2_add_reg[11] + (in2 << 1); 
+        H2_add_reg[11] <= H2_add_reg[12];    
+        H2_add_reg[12] <= H2_add_reg[13] - in2;  
+        H2_add_reg[13] <= H2_add_reg[14] - in2;                
+        H2_add_reg[14] <= H2_add_reg[15];     
+        H2_add_reg[15] <= H2_add_reg[16];
+	    H2_add_reg[16] <= in2;
+        
+        
+    
+    end
+end
+
+
+always@(posedge clk,negedge rst_n)
+begin
+    if(!rst_n) begin
+        for(j=0;j<17;j=j+1) begin
+            H3_add_reg[j]<=0;
+        end
+    end
+    else if(sel == 3) begin
+        H3_add_reg[0] <= H3_add_reg[1];
+        H3_add_reg[1] <= H3_add_reg[2];
+        H3_add_reg[2] <= H3_add_reg[3] - in1;            
+        H3_add_reg[3] <= H3_add_reg[4] - in1;
+        H3_add_reg[4] <= H3_add_reg[5];
+        H3_add_reg[5] <= H3_add_reg[6] + in1;            
+        H3_add_reg[6] <= H3_add_reg[7] + ((in1 << 1) + in1);
+        H3_add_reg[7] <= H3_add_reg[8] + ((in1 << 2) + in1);  
+        H3_add_reg[8] <= H3_add_reg[9] + ((in1 << 2) + in1);        
+        H3_add_reg[9] <= H3_add_reg[10] + ((in1 << 1) + in1);  
+        H3_add_reg[10] <= H3_add_reg[11] + in1; 
+        H3_add_reg[11] <= H3_add_reg[12];    
+        H3_add_reg[12] <= H3_add_reg[13] - in1;  
+        H3_add_reg[13] <= H3_add_reg[14] - in1;                
+        H3_add_reg[14] <= H3_add_reg[15];     
+        H3_add_reg[15] <= H3_add_reg[16];
+        H3_add_reg[16] <= 0;               
+       
+    
+    end
+end
+
+
+
+endmodule
