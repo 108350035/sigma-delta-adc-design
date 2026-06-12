@@ -6,6 +6,8 @@ sigma delta架構為二階CIFF以及一位量化器
 
 以tsmc 28nm 實現
 
+模擬電路之電源為1.8V，數位電路之電源為1V
+
 搭配工具:virtuoso spectre + ams + design compiler
 
 
